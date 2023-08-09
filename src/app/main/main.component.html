@@ -9,9 +9,9 @@
       </div>
       <div class="col-md-6 login  ">
         <h3>Login</h3>
-        <input (change)="acnoChange($event)" type="text" placeholder="User ID" id="us" name="ui">
-        <input (change)="pass($event)" type="password" placeholder="Password" id="ps" name="pw">
-        <button (click)="login()" type="button" id="btn">Log In</button>
+        <input #acno type="text" placeholder="User ID" id="us" name="ui">
+        <input #psw type="password" placeholder="Password" id="ps" name="pw">
+        <button (click)="login(acno,psw)" type="button" id="btn">Log In</button>
         <p class="clear">Need an Account? <a href="">Sign Up</a></p>
       </div>
       

@@ -11,16 +11,12 @@ export class MainComponent implements OnInit {
   ngOnInit():void{
     
   }
-  login(){
+  login(a:any,b:any){
+    console.log(a.value);
+    console.log(b.value);
+    
+    
       alert("clicked")
-  }
-  acnoChange(event:any){
-    console.log(event.target.value);
-    
-  }
-  pass(event:any){
-    console.log(event.target.value);
-    
   }
 
 }
